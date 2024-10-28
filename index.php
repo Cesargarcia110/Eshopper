@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Software Punto de Venta" content="">
     <meta name="Gerardo Aguilar" content="">
-    <title>Comprar | E-Shopper</title>
+    <title>Inicio | E-Shopper</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -50,8 +50,7 @@
 					<div class="col-sm-4">
 						<div class="logo pull-left">
 							<a href="index.php"><img src="images/home/logo.png" alt="" /></a>
-						</div>
-						
+						</div>						
 					</div>
 					<div class="col-sm-8">
 						<div class="shop-menu pull-right">
@@ -80,9 +79,9 @@
 						</div>
 						<div class="mainmenu pull-left">
 							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li><a href="index.php">Inicio</a></li>
-								<li class="dropdown"><a href="#" class="active">Comprar<i class="fa fa-angle-down"></i></a>
-                                   <ul role="menu" class="sub-menu">
+								<li><a href="index.php" class="active">Inicio</a></li>
+								<li class="dropdown"><a href="#">Comprar<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
                                         <li><a href="shop.php">Productos</a></li>				
 										<li><a href="checkout.php">Pagar</a></li> 
 										<li><a href="cart.php">Carrito</a></li> 
@@ -101,7 +100,44 @@
 			</div>
 		</div><!--/header-bottom-->
 	</header><!--/header-->
-	<br><br>
+	
+	<section id="slider"><!--slider-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div id="slider-carousel" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#slider-carousel" data-slide-to="0" class="active"></li>	
+						</ol>
+						
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="col-sm-6">
+									<h1><span>E</span>-SHOPPER</h1>
+									<h2>Proyecto</h2>
+									<p>Software Punto de Venta de Ropa </p>								
+								</div>
+								<div class="col-sm-6">
+									<img src="images/home/girl1.jpg" class="girl img-responsive" alt="" />
+									<img src="images/home/pricing.png"  class="pricing" alt="" />
+								</div>
+							</div>
+							
+						</div>
+						
+						<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
+							<i class="fa fa-angle-left"></i>
+						</a>
+						<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section><!--/slider-->
+	
 	<section>
 		<div class="container">
 			<div class="row">
@@ -122,7 +158,6 @@
 					
 					</div>
 				</div>
-				<br>
 				
 				<div class="col-sm-9 padding-right">
 					<div class="features_items"><!--features_items-->
@@ -149,13 +184,44 @@
 						
 					</div><!--features_items-->
 					
-				
+					
+					
+					<div class="recommended_items"><!--recommended_items-->
+						<h2 class="title text-center">Productos Recomendados</h2>
+						
+						<div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="item active">	
+									<div class="col-sm-4">
+										<div class="product-image-wrapper">
+											<div class="single-products">
+												<div class="productinfo text-center">
+													<img src="images/home/recommend1.jpg" alt="" />
+													<h2>$50</h2>
+													<p>Producto Esp 1</p>
+													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Agregar al Carrito</a>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							 <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
+								<i class="fa fa-angle-left"></i>
+							  </a>
+							  <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
+								<i class="fa fa-angle-right"></i>
+							  </a>			
+						</div>
+					</div><!--/recommended_items-->
+					
 				</div>
 			</div>
 		</div>
 	</section>
-
-	<br>
+	
 	<footer id="footer"><!--Footer-->
 		<div class="footer-top">
 			<div class="container">
@@ -163,33 +229,34 @@
 					<div class="col-sm-2">
 						<div class="companyinfo">
 							<h2><span>e</span>-shopper</h2>
-							<p>Proyecto software Punto de venta</p>
+							<p>Proyecto Software Punto de Venta</p>
 						</div>
 					</div>
+					
 					<div class="col-sm-3">
 						<div class="address">
 							<img src="images/home/map.png" alt="" />
-							<p>Durango, DGO, MX</p>
+							<p>Durango, Dgo. México</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		
 		<div class="footer-widget">
 			
 		</div>
+		
 		<div class="footer-bottom">
 			<div class="container">
 				<div class="row">
-					<p class="pull-left">Copyright © 2024 E-SHOPPER Inc. Todos los Derechos Reservados</p>					
+					<p class="pull-left">Copyright © 2024 E-SHOPPER Inc. Todos los Derechos</p>					
 				</div>
 			</div>
 		</div>
 		
 	</footer><!--/Footer-->
-	
-
-  
+	  
     <script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.scrollUp.min.js"></script>

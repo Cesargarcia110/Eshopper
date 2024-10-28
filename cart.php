@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Software Punto de Venta" content="">
-    <meta name="Gerardo Aguilar" content="">
-    <title>Comprar | E-Shopper</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Carrito | E-Shopper</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -56,8 +56,8 @@
 					<div class="col-sm-8">
 						<div class="shop-menu pull-right">
 							<ul class="nav navbar-nav">
-								<li><a href="checkout.php"><i class="fa fa-crosshairs"></i> Pagar</a></li>
-								<li><a href="cart.php"><i class="fa fa-shopping-cart"></i> Carrito</a></li>
+								<li><a href="checkout.php"><i class="fa fa-crosshairs"></i>Pagar</a></li>
+								<li><a href="cart.php"><i class="fa fa-shopping-cart"></i>Carrito</a></li>
 								<li><a href="login.php"><i class="fa fa-lock"></i> Login</a></li>
 							</ul>
 						</div>
@@ -82,7 +82,7 @@
 							<ul class="nav navbar-nav collapse navbar-collapse">
 								<li><a href="index.php">Inicio</a></li>
 								<li class="dropdown"><a href="#" class="active">Comprar<i class="fa fa-angle-down"></i></a>
-                                   <ul role="menu" class="sub-menu">
+                                    <ul role="menu" class="sub-menu">
                                         <li><a href="shop.php">Productos</a></li>				
 										<li><a href="checkout.php">Pagar</a></li> 
 										<li><a href="cart.php">Carrito</a></li> 
@@ -101,61 +101,82 @@
 			</div>
 		</div><!--/header-bottom-->
 	</header><!--/header-->
-	<br><br>
-	<section>
+
+	<section id="cart_items">
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-3">
-					<div class="left-sidebar">
-						<h2>Categoría</h2>
-						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Categoría 1</a></h4>
+			<div class="breadcrumbs">
+				<ol class="breadcrumb">
+				  <li><a href="index.html">Inicio</a></li>
+				  <li class="active">Carrito</li>
+				</ol>
+			</div>
+			<div class="table-responsive cart_info">
+				<table class="table table-condensed">
+					<thead>
+						<tr class="cart_menu">
+							<td class="image">Articulo</td>
+							<td class="description"></td>
+							<td class="price">Precio</td>
+							<td class="quantity">Cantidad</td>
+							<td class="total">Total</td>
+							<td></td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="cart_product">
+								<a href=""><img src="images/cart/one.png" alt=""></a>
+							</td>
+							<td class="cart_description">
+								<h4><a href="">Colorblock Scuba</a></h4>
+								<p>Web ID: 1089772</p>
+							</td>
+							<td class="cart_price">
+								<p>$59</p>
+							</td>
+							<td class="cart_quantity">
+								<div class="cart_quantity_button">
+									<a class="cart_quantity_up" href=""> + </a>
+									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+									<a class="cart_quantity_down" href=""> - </a>
 								</div>
-							</div>
-						</div><!--/category-products-->
-												
-						<div class="shipping text-center"><!--shipping-->
-							<img src="images/home/shipping.jpg" alt="" />
-						</div><!--/shipping-->
-					
+							</td>
+							<td class="cart_total">
+								<p class="cart_total_price">$59</p>
+							</td>
+							<td class="cart_delete">
+								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section> <!--/#cart_items-->
+
+	<section id="do_action">
+		<div class="container">
+			<div class="heading">
+				<h3>Totales</h3>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="total_area">
+						<ul>
+							<li>Sub Total del carrito<span>$59</span></li>
+							<li>Impuestos <span>$2</span></li>
+							<li>Precio de envio<span>Free</span></li>
+							<li>Total <span>$61</span></li>
+						</ul>
+							<a class="btn btn-default update" href="">Actualizar</a>
+							<a class="btn btn-default check_out" href="">Checar pedido</a>
 					</div>
-				</div>
-				<br>
-				
-				<div class="col-sm-9 padding-right">
-					<div class="features_items"><!--features_items-->
-						<h2 class="title text-center">Catálogo de Productos</h2>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-										<div class="productinfo text-center">
-											<img src="images/home/product1.jpg" alt="" />
-											<h2>$56</h2>
-											<p>Producto 1</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Agregar al Carrito</a>
-										</div>
-										<div class="product-overlay">
-											<div class="overlay-content">
-												<h2>$56</h2>
-												<p>Producto 1</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Agregar al Carrito</a>
-											</div>
-										</div>
-								</div>								
-							</div>
-						</div>
-						
-					</div><!--features_items-->
-					
-				
 				</div>
 			</div>
 		</div>
-	</section>
+	</section><!--/#do_action-->
 
-	<br>
+<br>
 	<footer id="footer"><!--Footer-->
 		<div class="footer-top">
 			<div class="container">
@@ -181,7 +202,8 @@
 		<div class="footer-bottom">
 			<div class="container">
 				<div class="row">
-					<p class="pull-left">Copyright © 2024 E-SHOPPER Inc. Todos los Derechos Reservados</p>					
+					<p class="pull-left">Copyright © 2013 E-SHOPPER Inc. Todos los Derechos Reservados</p>
+					<p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">Themeum</a></span></p>
 				</div>
 			</div>
 		</div>
@@ -189,11 +211,10 @@
 	</footer><!--/Footer-->
 	
 
-  
+
     <script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.scrollUp.min.js"></script>
-	<script src="js/price-range.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
 </body>
